@@ -9,7 +9,15 @@ return {
 		"mason-org/mason-lspconfig.nvim",
 		config = function()
 			require("mason-lspconfig").setup({
-				ensure_installed = { "lua_ls" },
+				ensure_installed = {
+					"lua_ls",
+					"gopls",
+					"helm_ls",
+					"html",
+					"jsonls",
+					"terraformls",
+					"yamlls",
+				},
 			})
 		end,
 	},
@@ -19,6 +27,31 @@ return {
 			local capabilities = require("cmp_nvim_lsp").default_capabilities()
 
 			local lspconfig = require("lspconfig")
+
+			lspconfig.jsonls.setup({
+				capabilities = capabilities,
+				settings = {
+					json = {
+						format = {
+							enable = true,
+						},
+						validate = { enable = true },
+					},
+				},
+			})
+
+			lspconfig.yamlls.setup({
+				capabilities = capabilities,
+			})
+
+			lspconfig.helm_ls.setup({
+				capabilities = capabilities,
+			})
+
+			lspconfig.terraformls.setup({
+				capabilities = capabilities,
+			})
+
 			lspconfig.gopls.setup({
 				cmd = { "gopls" },
 				capabilities = capabilities,
