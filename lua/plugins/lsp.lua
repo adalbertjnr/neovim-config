@@ -30,18 +30,24 @@ return {
 
 			lspconfig.jsonls.setup({
 				capabilities = capabilities,
-				settings = {
-					json = {
-						format = {
-							enable = true,
-						},
-						validate = { enable = true },
-					},
-				},
 			})
 
 			lspconfig.yamlls.setup({
 				capabilities = capabilities,
+
+				settings = {
+					yaml = {
+						validate = true,
+						completion = true,
+						schemaStore = {
+							enable = false, -- disable built-in schema store
+							url = "", -- required when manually setting schemas
+						},
+						schemas = {
+							["https://json.schemastore.org/github-workflow.json"] = "/.github/workflows/*",
+						},
+					},
+				},
 			})
 
 			lspconfig.helm_ls.setup({

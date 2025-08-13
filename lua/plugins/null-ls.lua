@@ -29,6 +29,9 @@ return {
 						filetypes = { "json", "yaml" },
 					}),
 
+					null_ls.builtins.formatting.yamlfmt,
+					null_ls.builtins.diagnostics.yamllint,
+
 					null_ls.builtins.formatting.gofmt,
 					null_ls.builtins.formatting.goimports,
 					null_ls.builtins.diagnostics.golangci_lint,
