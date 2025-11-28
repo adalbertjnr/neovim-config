@@ -1,8 +1,0 @@
-apiVersion: v1
-kind: Deployment
-metadata:
-  name: foo
-  namespace: bar
-spec:
-  selector:
-  template:

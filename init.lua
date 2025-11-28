@@ -1,3 +1,4 @@
-require("config.options")
 require("config.keybinds")
-require("config.lazy")
+require("core.lazy")
+require("core.lsp")
+require("config.options")
