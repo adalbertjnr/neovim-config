@@ -29,6 +29,8 @@ return {
 						filetypes = { "json", "yaml" },
 					}),
 
+					null_ls.builtins.diagnostics.tflint,
+
 					null_ls.builtins.formatting.yamlfmt,
 					null_ls.builtins.diagnostics.yamllint,
 

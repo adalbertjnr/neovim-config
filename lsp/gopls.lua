@@ -1,8 +1,8 @@
 return {
-	cmd = { "gopls" },                                   -- Command to start the language server
+	cmd = { "gopls" },                                         -- Command to start the language server
 	filetypes = { "go", "gomod", "gowork", "gotmpl", "gosum" }, -- File types that this server will handle
-	root_markers = { "go.mod", "go.work", ".git" },      -- Markers to identify the root of the project
-	settings = {                                         -- Settings for the language server
+	root_markers = { "go.mod", "go.work", ".git" },            -- Markers to identify the root of the project
+	settings = {                                               -- Settings for the language server
 		gopls = {
 			gofumpt = true,
 			codelenses = {
@@ -87,11 +87,11 @@ return {
 				yield = true,
 				unusedvariable = true,
 			},
-			usePlaceholders = true,
+			usePlaceholders = false,
 			completeUnimported = true,
 			staticcheck = true,
 			directoryFilters = { "-.git", "-.vscode", "-.idea", "-.vscode-test", "-node_modules" },
-			semanticTokens = true,
+			semanticTokens = false,
 		},
 	},
 }

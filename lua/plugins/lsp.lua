@@ -17,6 +17,7 @@ return {
 					"jsonls",
 					"terraformls",
 					"yamlls",
+					"tflint",
 				},
 			})
 		end,
@@ -34,4 +35,3 @@ return {
 		end,
 	},
 }
-

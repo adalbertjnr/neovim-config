@@ -1,6 +1,13 @@
 vim.lsp.enable({
+	-- "gh_actions",
+	-- "gitlab_ci_ls",
 	"gopls",
+	-- "helm_ls",
+	"jsonls",
 	"lua_ls",
+	-- "pyright",
+	"terraformls",
+	"yamlls",
 })
 
 vim.diagnostic.config({
@@ -26,4 +33,3 @@ vim.diagnostic.config({
 		},
 	},
 })
-
