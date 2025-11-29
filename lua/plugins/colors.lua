@@ -40,8 +40,14 @@ return {
 			-- require('vscode').load()
 
 			-- load the theme without affecting devicon colors.
-			vim.cmd.colorscheme("vscode")
+			-- vim.cmd.colorscheme("vscode")
 		end,
+	},
+	{
+		"numToStr/Sakura.nvim",
+		config = function ()
+			vim.cmd.colorscheme("sakura")
+		end
 	},
 	{
 		"nvim-lualine/lualine.nvim",
