@@ -1,7 +1,12 @@
 vim.g.mapleader = " "
 vim.keymap.set("n", "<leader>ex", vim.cmd.Ex)
 
-vim.keymap.set("n", "<leader>w", "<cmd>w<CR>")
+vim.keymap.set("n", "<leader>fw", function()
+	vim.lsp.buf.format({ async = true })
+	vim.cmd("w")
+end, { desc = "Format buffer" })
+
+	vim.keymap.set("n", "<leader>w", "<cmd>w<CR>")
 
 vim.keymap.set("n", "<leader>q", ":q<CR>")
 

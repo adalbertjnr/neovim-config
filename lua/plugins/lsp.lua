@@ -12,8 +12,8 @@ return {
 				ensure_installed = {
 					"lua_ls",
 					"gopls",
+					"bashls",
 					"helm_ls",
-					"html",
 					"jsonls",
 					"terraformls",
 					"yamlls",
