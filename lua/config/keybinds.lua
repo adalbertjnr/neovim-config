@@ -10,6 +10,9 @@ vim.keymap.set("n", "<leader>k", "<C-w>k")
 vim.keymap.set("n", "<leader>h", "<C-w>h")
 vim.keymap.set("n", "<leader>l", "<C-w>l")
 
+vim.keymap.set("n", "<leader>v", "<C-w>v<C-w>l")
+vim.keymap.set("n", "<leader>s", "<C-w>s<C-w>j")
+
 local function toggle()
 	local word = vim.fn.expand("<cword>")
 	if word == "true" then
