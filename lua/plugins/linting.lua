@@ -3,7 +3,6 @@ return {
 	event = {
 		"BufReadPre",
 		"BufNewFile",
-		"InsertLeave",
 	},
 	config = function()
 		local lint = require("lint")
@@ -12,10 +11,10 @@ return {
 			typescript = { "eslint_d" },
 			javascriptreact = { "eslint_d" },
 			typescriptreact = { "eslint_d" },
-			go = { "golangcilint" },
+			-- go = { "golangcilint" },
 			yaml = { "yamllint" },
 			terraform = { "tflint" },
-			python = { "pylint " },
+			python = { "pylint" },
 			sh = { "shellcheck" },
 		}
 

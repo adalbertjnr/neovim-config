@@ -27,6 +27,7 @@ return {
 			analyses = {
 				nilness = true,
 				unusedparams = true,
+				unusedvariable = true,
 				unusedwrite = true,
 				useany = true,
 				unreachable = true,
@@ -85,7 +86,6 @@ return {
 				unusedresult = true,
 				waitgroup = true,
 				yield = true,
-				unusedvariable = true,
 			},
 			usePlaceholders = false,
 			completeUnimported = true,
