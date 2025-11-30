@@ -27,7 +27,7 @@ return {
 			typescriptreact = { "prettier" },
 			python = { "black" },
 			lua = { "stylua" },
-			yaml = { "yamlfmt" },
+			yaml = { "prettier" },
 			json = { "prettier" },
 			go = { "gofmt", "goimports" },
 			terraform = { "terraform_fmt" },
@@ -46,6 +46,7 @@ return {
 			},
 		},
 	},
+
 	-- init = function()
 	-- 	-- If you want the formatexpr, here is the place to set it
 	-- 	vim.o.formatexpr = "v:lua.require'conform'.formatexpr()"

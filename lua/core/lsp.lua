@@ -2,10 +2,10 @@ vim.lsp.enable({
 	-- "gh_actions",
 	-- "gitlab_ci_ls",
 	"gopls",
-	-- "helm_ls",
+	"helm_ls",
 	"jsonls",
 	"lua_ls",
-	-- "pyright",
+	"pyright",
 	"terraformls",
 	"yamlls",
 })
