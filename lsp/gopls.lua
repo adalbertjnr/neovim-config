@@ -4,7 +4,7 @@ return {
 	root_markers = { "go.mod", "go.work", ".git" },            -- Markers to identify the root of the project
 	settings = {                                               -- Settings for the language server
 		gopls = {
-			gofumpt = true,
+			gofumpt = false,
 			codelenses = {
 				gc_details = false,
 				generate = true,

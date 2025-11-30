@@ -27,6 +27,12 @@ return {
 				end
 			end
 
+			newFile = function()
+				if api.tree.is_visible() and api.tree.is_tree_buf() then
+					api.fs.create()
+				end
+			end
+
 			-- del mappings
 			vim.keymap.del("n", "<C-e>", { buffer = bufnr })
 			vim.keymap.del("n", "q", { buffer = bufnr })
@@ -37,7 +43,7 @@ return {
 			-- custom mappings
 			vim.keymap.set("n", "<C-e>", toggleExplorer, {})
 			vim.keymap.set("n", "<C-r>", api.node.open.vertical, {})
-			vim.keymap.set("n", "n", api.fs.create, {})
+			vim.keymap.set("n", "n", newFile, { buffer = bufnr })
 			vim.keymap.set("n", "?", api.tree.toggle_help, opts("Help"))
 		end
 		require("nvim-tree").setup({
