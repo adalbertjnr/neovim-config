@@ -10,6 +10,7 @@ return {
 		config = function()
 			require("mason-lspconfig").setup({
 				ensure_installed = {
+					"gh_actions_ls",
 					"lua_ls",
 					"gopls",
 					"bashls",

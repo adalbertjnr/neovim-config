@@ -1,5 +1,5 @@
 vim.lsp.enable({
-	-- "gh_actions",
+	"gh_actions",
 	-- "gitlab_ci_ls",
 	"gopls",
 	"helm_ls",
