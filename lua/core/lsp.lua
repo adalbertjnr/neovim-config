@@ -8,6 +8,7 @@ vim.lsp.enable({
 	"pyright",
 	"terraformls",
 	"yamlls",
+	"bashls",
 })
 
 vim.diagnostic.config({
