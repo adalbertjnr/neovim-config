@@ -86,6 +86,7 @@ return {
 	settings = {
 		Lua = {
 			codeLens = { enable = true },
+			semantic = { enable = false },
 			hint = { enable = true, semicolon = "Disable" },
 		},
 	},
