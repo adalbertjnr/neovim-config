@@ -40,20 +40,21 @@ return {
 			-- require('vscode').load()
 
 			-- load the theme without affecting devicon colors.
-			vim.cmd.colorscheme("vscode")
+			-- vim.cmd.colorscheme("vscode")
 		end,
 	},
 	{
-		"numToStr/Sakura.nvim",
-		config = function ()
-			-- vim.cmd.colorscheme("sakura")
-		end
+		"adalbertjnr/2017dark.nvim",
+		config = function()
+			require("2017dark.theme").colorscheme()
+			vim.cmd.colorscheme("2017dark")
+		end,
 	},
 	{
 		"nvim-lualine/lualine.nvim",
 		dependencies = { "nvim-tree/nvim-web-devicons" },
 		opts = {
-			theme = "vscode",
+			theme = "2017dark",
 		},
 	},
 }
