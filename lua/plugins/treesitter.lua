@@ -27,7 +27,6 @@ return {
 					"gotmpl",
 					"helm",
 					"terraform",
-					"hcl",
 					"python",
 				},
 				auto_install = false,
