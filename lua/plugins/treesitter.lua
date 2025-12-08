@@ -11,10 +11,9 @@ return {
 				indent = { enable = true },
 				autotag = { enable = true },
 				ensure_installed = {
-					"json5",
 					"javascript",
 					"typescript",
-					"tsx",
+					"json",
 					"yaml",
 					"markdown",
 					"markdown_inline",
@@ -26,8 +25,10 @@ return {
 					"gomod",
 					"gosum",
 					"gotmpl",
+					"helm",
 					"terraform",
 					"hcl",
+					"python",
 				},
 				auto_install = false,
 			})

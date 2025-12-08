@@ -45,10 +45,8 @@ return {
 	},
 	{
 		"adalbertjnr/2017dark.nvim",
-		config = function()
-			require("2017dark.theme").colorscheme()
-			vim.cmd.colorscheme("2017dark")
-		end,
+		lazy = false,
+		priority = 1000,
 	},
 	{
 		"nvim-lualine/lualine.nvim",
