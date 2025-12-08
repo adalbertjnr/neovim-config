@@ -42,7 +42,7 @@ return {
 
 			-- custom mappings
 			vim.keymap.set("n", "<C-e>", toggleExplorer, {})
-			vim.keymap.set("n", "<C-r>", api.node.open.vertical, {})
+			vim.keymap.set("n", "<C-r>", api.node.open.vertical, { buffer = bufnr })
 			vim.keymap.set("n", "n", newFile, { buffer = bufnr })
 			vim.keymap.set("n", "?", api.tree.toggle_help, opts("Help"))
 		end
