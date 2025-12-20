@@ -1,1 +1,1 @@
-vim.cmd.runtime("after/ftplugin/yaml.lua")
+require("indent.shared_yaml").load()

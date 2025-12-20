@@ -1,7 +1,1 @@
-local set = vim.opt_local
-
-set.expandtab = true
-set.shiftwidth = 2
-set.tabstop = 2
-set.autoindent = true
-set.smartindent = false
+require("indent.shared_yaml").load()
