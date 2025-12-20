@@ -13,6 +13,7 @@ return {
 				"tflint",
 				"pyright",
 				"bashls",
+				"ts_ls",
 			},
 		},
 		dependencies = {
@@ -44,6 +45,7 @@ return {
 			vim.keymap.set("n", "gd", vim.lsp.buf.definition, {})
 			vim.keymap.set("n", "gi", vim.lsp.buf.implementation, {})
 			vim.keymap.set("n", "gr", vim.lsp.buf.references, {})
+			vim.keymap.set("n", "gca", vim.lsp.buf.code_action, {})
 
 			vim.keymap.set("n", "gs", vim.diagnostic.open_float, {})
 			vim.keymap.set("n", "gl", vim.diagnostic.setloclist, {})
