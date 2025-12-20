@@ -19,7 +19,6 @@ return {
 					"markdown_inline",
 					"bash",
 					"lua",
-					"dockerfile",
 					"gitignore",
 					"go",
 					"gomod",
