@@ -8,7 +8,6 @@ return {
 	config = function()
 		local function attach(bufnr)
 			local api = require("nvim-tree.api")
-			local view = require("nvim-tree.view")
 
 			local function opts(desc)
 				return { desc = "nvim-tree: " .. desc, buffer = bufnr, noremap = true, silent = true, nowait = true }
@@ -17,7 +16,7 @@ return {
 			-- default mappings
 			api.config.mappings.default_on_attach(bufnr)
 
-			toggleExplorer = function()
+			local toggleExplorer = function()
 				if not api.tree.is_visible() then
 					api.tree.open()
 				elseif vim.bo.filetype ~= "NvimTree" then
@@ -27,7 +26,7 @@ return {
 				end
 			end
 
-			newFile = function()
+			local newFile = function()
 				if api.tree.is_visible() and api.tree.is_tree_buf() then
 					api.fs.create()
 				end
@@ -48,6 +47,14 @@ return {
 		end
 		require("nvim-tree").setup({
 			on_attach = attach,
+			update_focused_file = {
+				enable = true,
+			},
+			diagnostics = {
+				enable = true,
+				show_on_dirs = true,
+				show_on_open_dirs = true,
+			},
 		})
 	end,
 }
