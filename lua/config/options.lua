@@ -1,9 +1,17 @@
 vim.opt.number = true
 vim.opt.cursorline = true
 vim.opt.relativenumber = true
-vim.opt.shiftwidth = 4
-vim.opt.tabstop = 4
+
+vim.opt.autoindent = true
+
+vim.opt.shiftwidth = 2
+vim.opt.tabstop = 2
+
+vim.opt.guicursor = ""
 vim.opt.signcolumn = "yes"
+
+vim.opt.scrolloff = 10
+vim.opt.updatetime = 500
 
 vim.api.nvim_set_hl(0, "CursorLineNr", { fg = "#bbbbbb" })
 vim.api.nvim_set_hl(0, "LineNr", { fg = "#ffffff" })
