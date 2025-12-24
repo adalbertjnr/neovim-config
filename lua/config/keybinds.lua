@@ -16,6 +16,8 @@ vim.keymap.set("n", "<leader>s", "<C-w>s<C-w>j")
 vim.keymap.set("v", ">", ">gv")
 vim.keymap.set("v", "<", "<gv")
 
+vim.keymap.set("t", "<Esc>", "<C-\\><C-n>")
+
 local function toggle()
 	local word = vim.fn.expand("<cword>")
 	if word == "true" then
