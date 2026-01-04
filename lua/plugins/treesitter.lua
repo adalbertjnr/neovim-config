@@ -8,7 +8,7 @@ return {
 				highlight = {
 					enable = true,
 				},
-				indent = { enable = true },
+				indent = { enable = true, disable = { "go" } },
 				autotag = { enable = true },
 				ensure_installed = {
 					"javascript",
