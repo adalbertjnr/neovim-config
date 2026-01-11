@@ -18,6 +18,14 @@ return {
 			sh = { "shellcheck" },
 		}
 
+		lint.linters.yamllint.args = {
+			"--format",
+			"parsable",
+			"-",
+			"-d",
+			"{extends: default, rules: {line-length: disable, comments: {min-spaces-from-content: 1}}}",
+		}
+
 		local lint_augroup = vim.api.nvim_create_augroup("lint", { clear = true })
 
 		vim.api.nvim_create_autocmd({ "BufEnter", "BufWritePost", "TextChanged" }, {
