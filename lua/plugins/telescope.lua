@@ -7,14 +7,10 @@ return {
 			file_ignore_patterns = {
 				".git/",
 				".cache",
-				"%.o",
-				"%.a",
-				"%.out",
-				"%.class",
-				"%.pdf",
-				"%.mkv",
-				"%.mp4",
-				"%.zip",
+				"node_modules/",
+				"vendor/",
+				"dist/",
+				"build/",
 			},
 		},
 		pickers = {
