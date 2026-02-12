@@ -17,11 +17,11 @@ return {
 			find_files = {
 				hidden = true,
 			},
-		},
-		live_grep = {
-			additional_arogs = function()
-				return { "--hidden" }
-			end,
+			live_grep = {
+				additional_args = function()
+					return { "--hidden" }
+				end,
+			},
 		},
 	},
 	config = function()
