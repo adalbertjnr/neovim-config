@@ -1,5 +1,15 @@
 return {
 	{
+		"EdenEast/nightfox.nvim",
+		config = function()
+			-- Default options
+			require("nightfox").setup({})
+
+			-- setup must be called before loading
+			-- vim.cmd("colorscheme nightfox")
+		end,
+	},
+	{
 		"Mofiqul/vscode.nvim",
 		config = function()
 			local c = require("vscode.colors").get_colors()
