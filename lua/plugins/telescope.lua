@@ -34,7 +34,6 @@ return {
 		vim.keymap.set("n", "<leader>fg", builtin.live_grep, { desc = "Telescope live grep" })
 		vim.keymap.set("n", "<leader>fb", builtin.buffers, { desc = "Telescope buffers" })
 		vim.keymap.set("n", "<leader>fh", builtin.help_tags, { desc = "Telescope help tags" })
-		vim.keymap.set("n", "<leader>fgc", builtin.git_commits, { desc = "Git commits" })
-		vim.keymap.set("n", "<leader>fgb", builtin.git_branches, { desc = "Git branches" })
+		vim.keymap.set("n", "<leader>fc", builtin.git_commits, { desc = "Git commits" })
 	end,
 }
