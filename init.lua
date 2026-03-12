@@ -4,4 +4,4 @@ require("core.lsp")
 require("config.options")
 require("config.autocmds")
 
-vim.cmd([[colorscheme 2017dark]])
+vim.cmd([[colorscheme carbonfox]])

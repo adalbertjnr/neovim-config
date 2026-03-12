@@ -35,5 +35,8 @@ return {
 		vim.keymap.set("n", "<leader>fb", builtin.buffers, { desc = "Telescope buffers" })
 		vim.keymap.set("n", "<leader>fh", builtin.help_tags, { desc = "Telescope help tags" })
 		vim.keymap.set("n", "<leader>fc", builtin.git_commits, { desc = "Git commits" })
+		vim.keymap.set("n", "<leader>fr", builtin.lsp_references, { desc = "LSP References" })
+		vim.keymap.set("n", "<leader>fs", builtin.lsp_document_symbols, { desc = "LSP Document Symbols" })
+		vim.keymap.set("n", "<leader>fd", builtin.diagnostics, { desc = "Diagnostics" })
 	end,
 }
