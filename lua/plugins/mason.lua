@@ -41,7 +41,13 @@ return {
 	{
 		"neovim/nvim-lspconfig",
 		config = function()
-			vim.keymap.set("n", "gh", vim.lsp.buf.hover, {})
+			vim.keymap.set("n", "gh", function()
+				vim.lsp.buf.hover({
+					border = "single",
+					focusable = true,
+				})
+			end, { desc = "LSP Hover and focus popup" })
+
 			vim.keymap.set("n", "gd", vim.lsp.buf.definition, {})
 			vim.keymap.set("n", "gi", vim.lsp.buf.implementation, {})
 			vim.keymap.set("n", "gr", vim.lsp.buf.references, {})
