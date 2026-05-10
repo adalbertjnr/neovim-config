@@ -43,6 +43,8 @@ return {
 			-- floating terminal title
 			vim.g.floaterm_title = " Terminal(s) ($1/$2) "
 			vim.g.floaterm_titleposition = "center"
+
+			vim.g.floaterm_height = 0.9
 		end,
 	},
 }
