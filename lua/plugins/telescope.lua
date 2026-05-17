@@ -1,7 +1,10 @@
 return {
 	"nvim-telescope/telescope.nvim",
-	tag = "0.1.8",
-	dependencies = { "nvim-lua/plenary.nvim" },
+	version = "*",
+	dependencies = {
+		"nvim-lua/plenary.nvim",
+		{ "nvim-telescope/telescope-fzf-native.nvim", build = "make" },
+	},
 
 	opts = {
 		defaults = {
@@ -36,7 +39,8 @@ return {
 		vim.keymap.set("n", "<leader>fh", builtin.help_tags, { desc = "Telescope help tags" })
 		vim.keymap.set("n", "<leader>fc", builtin.git_commits, { desc = "Git commits" })
 		vim.keymap.set("n", "<leader>fr", builtin.lsp_references, { desc = "LSP References" })
-		vim.keymap.set("n", "<leader>fs", builtin.lsp_document_symbols, { desc = "LSP Document Symbols" })
 		vim.keymap.set("n", "<leader>fd", builtin.diagnostics, { desc = "Diagnostics" })
+		vim.keymap.set("n", "<leader>fi", builtin.lsp_implementations, { desc = "LSP Implenentations" })
+		vim.keymap.set("n", "<leader>ft", builtin.lsp_definitions, { desc = "LSP Type Definitions" })
 	end,
 }
