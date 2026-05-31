@@ -35,9 +35,9 @@
 ---@type vim.lsp.Config
 return {
 	cmd = { "terraform-ls", "serve" },
-	filetypes = { "terraform", "terraform-vars" },
-	root_markers = { ".terraform", ".git", "*.tf" },
-	on_attach = function(client, bufnr)
+	filetypes = { "tf", "terraform", "terraform-vars" },
+	root_markers = { ".terraform", ".git" },
+	on_attach = function(client, _)
 		client.server_capabilities.semanticTokensProvider = nil
 	end,
 }
