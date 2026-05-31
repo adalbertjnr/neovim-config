@@ -50,6 +50,10 @@ return {
 			update_focused_file = {
 				enable = true,
 			},
+			git = {
+				enable = true,
+				ignore = false,
+			},
 			diagnostics = {
 				enable = true,
 				show_on_dirs = true,
