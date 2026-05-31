@@ -1,6 +1,6 @@
 return {
 	"ray-x/lsp_signature.nvim",
-	event = "InsertEnter",
+	event = "LspAttach",
 	opts = {
 		handler_opts = {
 			border = "single", -- double, rounded, single, shadow, none, or a table of borders
