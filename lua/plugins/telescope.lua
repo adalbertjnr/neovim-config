@@ -42,5 +42,6 @@ return {
 		vim.keymap.set("n", "<leader>fd", builtin.diagnostics, { desc = "Diagnostics" })
 		vim.keymap.set("n", "<leader>fi", builtin.lsp_implementations, { desc = "LSP Implenentations" })
 		vim.keymap.set("n", "<leader>ft", builtin.lsp_definitions, { desc = "LSP Type Definitions" })
+		vim.keymap.set("n", "<leader>fs", builtin.lsp_document_symbols, { desc = "Document Symbols" })
 	end,
 }
