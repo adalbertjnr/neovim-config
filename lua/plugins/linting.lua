@@ -23,7 +23,7 @@ return {
 			"parsable",
 			"-",
 			"-d",
-			"{extends: default, rules: {line-length: disable, comments: {min-spaces-from-content: 1}}}",
+			"{extends: default, rules: {line-length: disable, identantion: disable, comments: {min-spaces-from-content: 1}}}",
 		}
 
 		local lint_augroup = vim.api.nvim_create_augroup("lint", { clear = true })
